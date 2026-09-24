@@ -39,5 +39,5 @@ Hump-shaped pattern reproduced. Weaker R² explained by daily vs 5-minute RV.
 ## Data sources
 - SPY, VIX, DAX, CAC: Yahoo Finance (frozen)
 - TB3MS, BAA, AAA, GS10, Euribor: FRED (frozen)
-- Shiller P/E: Robert Shiller's website (frozen, date bug fixed)
+- Shiller P/E: Robert Shiller's website (frozen)
 - CAY: Lettau & Ludvigson website (frozen)
