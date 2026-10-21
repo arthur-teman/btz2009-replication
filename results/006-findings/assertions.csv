@@ -1,6 +1,7 @@
 finding,assertion,claim,results,status
-F1,max |coef − BTZ| ≤ 0.05 for h ≤ 15 (±0.005),holds,max 0.0504 at h = 3,pass
-F1,"coef, h = 3",0.42,0.4196,pass
+F1,max |coef − BTZ| ≤ 0.0505 for h ≤ 15,holds,max 0.0504 at h = 3,pass
+F1,largest gap at h = 3,holds,h = 3,pass
+F1,"coef, h = 3",0.420,0.41962,pass
 F1,"BTZ coef, h = 3",0.47,0.4700,pass
 F1,coefficient peaks at h = 3 (mine and BTZ),holds,"argmax mine h = 3, BTZ h = 3",pass
 F1,Hodrick t peaks at h = 3 (mine and BTZ),holds,"argmax mine h = 3, BTZ h = 3",pass
@@ -9,13 +10,13 @@ F1,"BTZ Hodrick t, h = 3",2.86,2.8600,pass
 F1,no Hodrick |t| above 1.96 for h ≥ 18 (mine and BTZ),holds,"mine 0.86, 0.56; BTZ 0.56, 0.11",pass
 F2,"t1B ratio, h = 1",0.82,0.8196,pass
 F2,"t1B ratio, h = 3",0.78,0.7757,pass
-F2,"t1B ratio, h = 6",0.87,0.8631,DEVIATION
-F2,"sqrt adj. R² ratio, h = 1",0.92,0.9149,DEVIATION
-F2,"sqrt adj. R² ratio, h = 3",0.82,0.8149,DEVIATION
+F2,"t1B ratio, h = 6",0.86,0.8631,pass
+F2,"sqrt adj. R² ratio, h = 1",0.91,0.9149,pass
+F2,"sqrt adj. R² ratio, h = 3",0.81,0.8149,pass
 F2,"sqrt adj. R² ratio, h = 6",0.91,0.9075,pass
 F2,"t-statistics below the paper's at h = 1, 3, 6",holds,"0.820, 0.776, 0.863",pass
-F2,daily returns a month,22,21.01,DEVIATION
-F2,five-minute returns a month,1700,1639,DEVIATION
+F2,daily returns a month,21,21.01,pass
+F2,"five-minute returns a month, 21 × 78 (nearest 10)",1640,1638.0,pass
 F2,mean RV 1990–2007,20.8,20.844,pass
 F2,mean IV 1990–2007,33.2,33.237,pass
 F2,mean VRP 1990–2007,12.4,12.394,pass
@@ -27,6 +28,7 @@ F3,"NW t, R-base h = 3",3.46,3.4554,pass
 F4,"p NW iid, R-base h = 3",0.002,0.00200,pass
 F4,"p NW wild, R-base h = 3",0.007,0.00680,pass
 F4,"Hodrick t, R-base h = 3",2.22,2.2185,pass
+F4,mean of the null NW t within ±0.15 of 0 in all four panels,holds,"R-base iid +0.060, R-base wild +0.054, R-G iid -0.037, R-G wild +0.052",pass
 F5,"coef, 1990–2025 h = 3",0.09,0.0908,pass
 F5,"NW t, 1990–2025 h = 3",0.70,0.6962,pass
 F5,VRP 2020-03,-509,-508.51,pass
@@ -56,8 +58,9 @@ F8,"Hodrick t VRP, with RREL (RT)",2.43,2.4309,pass
 F8,VRP significant next to each control; range runs from CAY to RREL,holds,"log_PE 2.40, DFSP 2.23, TMSP 2.25, RREL 2.43, CAY 2.06",pass
 F8,controls in the joint regression,5,5.00,pass
 F8,"Hodrick t VRP, all controls (RT)",2.68,2.6774,pass
-F8,"smallest R² increase, VRP + log P/E or CAY (points)",2.3,2.331,pass
-F8,"largest R² increase, VRP + log P/E or CAY (points)",3.0,2.981,pass
+F8,"R² increase, VRP + log P/E (points)",2.98,2.9806,pass
+F8,"R² increase, VRP + CAY (points)",2.33,2.3314,pass
+F8,"R² increase, VRP + all five controls (points)",3.33,3.3302,pass
 F8,"Hodrick t VRP, with CAY (first-notebook dating)",1.92,1.9184,pass
 F8,first-notebook dating pushes VRP below 1.96 next to CAY,holds,1.918,pass
 F9,"Hodrick t, DAX pre-2008 (SK)",1.14,1.1364,pass
